@@ -29,6 +29,7 @@ const ComputersCanvas = () => {
   return (
    
     <Canvas
+    style={{position : 'relative' , top : '-15rem' , right : '5rem'}}
     frameloop='demand'
     shadows
     camera={{position : [20 , 3 , 5], fov : 20 }}
