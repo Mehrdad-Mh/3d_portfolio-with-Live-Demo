@@ -8,7 +8,7 @@ import CanvasLoader from '../Loader';
 const Computers = () => {
 
  const ref= useRef()
-    const {computer} = useGLTF("https://drive.google.com/file/d/11TaRwugKhRTmz0pBk6_bbRtdnt9avKyD/view?usp=share_link");
+    const {computer} = useGLTF("./desktop_pc/scene.gltf");
 
   return (
     <mesh >
