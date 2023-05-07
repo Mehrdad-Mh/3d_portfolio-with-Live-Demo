@@ -8,7 +8,7 @@ import CanvasLoader from '../Loader';
 const Computers = () => {
 
  const ref= useRef()
-    const {computer} = useGLTF("./scene.glb");
+    const computer = useGLTF("./scene.glb");
 
   return (
     <mesh >
@@ -31,7 +31,7 @@ const ComputersCanvas = () => {
     <Canvas
     frameloop='demand'
     shadows
-    camera={{position : [20 , 3 , 5], fov : 25 }}
+    camera={{position : [20 , 3 , 5], fov : 20 }}
     gl={{preserveDrawingBuffer : true}}
     >
       
