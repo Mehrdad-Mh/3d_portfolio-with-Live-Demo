@@ -1,0 +1,1 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d67a50df-efa5-403a-8973-a839ba6915ba/deploy-status)](https://app.netlify.com/sites/mehrdadd-p/deploys)
