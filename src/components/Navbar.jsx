@@ -15,7 +15,7 @@ const Navbar = () => {
     <nav className={`${styles.paddingX} w-full 
     flex items-center py-5 fixed top-0 z-20 bg-primary`}>
 
-      <div className='w-full flex justify-between items-center 
+      <div className='w-full flex flex-row-reverse justify-between items-center 
     max-w-7xl mx-auto'>
 
         <Link to='/' 
@@ -46,7 +46,7 @@ const Navbar = () => {
         </ul>
 
         <div className='sm:hidden flex flex-1 justify-end
-             items-center'>
+             items-center mob'>
           <img
             src={toggle ? close : menu}
             alt='menu'
