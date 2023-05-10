@@ -60,8 +60,9 @@ setISMobile(event.matches)
   return (
    
     <Canvas
-    style={{position : 'relative' , top : '-28rem' , right : '3rem'}}
+    // style={{position : 'relative' , top : '-28rem' , right : '3rem'}}
     frameloop='demand'
+    
     shadows
     camera={{position : [20 , 3 , 5], fov : 20 }}
     gl={{preserveDrawingBuffer : true}}

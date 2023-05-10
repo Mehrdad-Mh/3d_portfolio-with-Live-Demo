@@ -50,7 +50,7 @@ scale={1}
 const BallCanvas = ({icon}) => {
   return (
     <Canvas
-   
+    autoRotate
     frameloop='demand'
      dpr={[1,2]}
     // shadows
