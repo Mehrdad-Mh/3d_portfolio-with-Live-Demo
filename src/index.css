@@ -50,6 +50,10 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.vertical-timeline{
+  direction: ltr!important;
+}
+
 .violet-gradient {
   background: #804dee;
   background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
@@ -228,5 +232,10 @@
   .mob{
     position: relative;
     right: 37px;
+  }
+
+  .cbn{
+    display: flex ;
+    flex-direction: column;
   }
 }

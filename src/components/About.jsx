@@ -23,7 +23,7 @@ variants={fadeIn('right' , 'spring' ,
 }}
 className='bg-tertiary rounded-[20px]
 py-5 px-12 min-h-[288px] flex 
-justify-evenly items-center flex-col
+justify-center items-center flex-col
 '>
 <img src={icon} alt={title} className='w-16
 h-16 object-contain
@@ -63,7 +63,7 @@ const About = () => {
 جذاب برای یک UI جذاب تر داخلش استفاده میشه.
 مرسی 
     </motion.p>
-    <div className='mt-20 flex gap-10'>
+    <div className='mt-20 flex gap-10 cbn'>
 
       {services.map((service , index) => (
         <ServiceCard key={service.title} index={index} {...service} />
