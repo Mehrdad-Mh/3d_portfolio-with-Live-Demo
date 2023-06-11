@@ -30,6 +30,8 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import myproj from "./myproj.png"
+import myproj2 from "./myproj2.png"
 
 export {
   mehrdad,
@@ -62,4 +64,6 @@ export {
   carrent,
   jobit,
   tripguide,
+  myproj,
+  myproj2,
 };

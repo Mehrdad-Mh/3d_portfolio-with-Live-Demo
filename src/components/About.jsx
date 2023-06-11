@@ -7,6 +7,27 @@ import { services } from '../constants';
 import {fadeIn , textVariant} from '../utils/motion';
 import  SectionWrapper  from '../hoc/SectionWrapper';
 
+// const expcolor = `#${Math.floor(Math.random() * 1000000)}`;
+
+
+
+var expcolor = document.getElementById("chngclr");
+
+function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+function changeColor(){
+  expcolor.style.color= getRandomColor();
+}
+
+setInterval(changeColor,1000);
+
 const ServiceCard = ({index ,title , icon}) => {
   return (
     <Tilt className="xs:w-[250px] w-full">
@@ -28,9 +49,10 @@ justify-center items-center flex-col
 <img src={icon} alt={title} className='w-16
 h-16 object-contain
 ' />
-<h4 className='text-white text-[20px] 
-font-bold text-center
-'>
+<h4 className=' text-[20px] 
+font-bold text-center 
+'
+>
   {title}
 </h4>
 </div>
@@ -63,10 +85,10 @@ const About = () => {
 جذاب برای یک UI جذاب تر داخلش استفاده میشه.
 مرسی 
     </motion.p>
-    <div className='mt-20 flex gap-10 cbn'>
+    <div className='mt-20 flex gap-10 cbn ' id='chngclr'>
 
       {services.map((service , index) => (
-        <ServiceCard key={service.title} index={index} {...service} />
+        <ServiceCard  key={service.title} index={index} {...service} />
       ))}
 
     </div>

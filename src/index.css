@@ -28,6 +28,7 @@
   font-family: "vazir"!important;
   scroll-behavior: smooth;
   color-scheme: dark;
+
 }
 
 .hash-span {
@@ -50,8 +51,12 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.vertical-timeline{
+.vertical-timeline-element{
   direction: ltr!important;
+}
+
+.vertical-timeline-element-content{
+  direction: rtl!important;
 }
 
 .violet-gradient {

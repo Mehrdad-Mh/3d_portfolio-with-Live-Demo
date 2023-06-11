@@ -23,6 +23,8 @@ import {
     jobit,
     tripguide,
     threejs,
+    myproj,
+    myproj2,
   } from "../assets";
   
   export const navLinks = [
@@ -44,18 +46,23 @@ import {
     {
       title: " توسعه دهنده فرانت",
       icon: web,
+      class : "exptitle"
+    
     },
     {
       title: "توسعه دهنده react",
       icon: mobile,
+      class : "exptitle"
     },
     {
       title: "آشنا با بک اند",
       icon: backend,
+      class : "exptitle"
     },
     {
       title: " تولید محتوا ",
       icon: creator,
+      class : "exptitle"
     },
   ];
   
@@ -116,55 +123,58 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
+      
+      title: "React.js برنامه نویس",
+      company_name: "initializer",
       icon: starbucks,
       iconBg: "#383E56",
       date: "March 2020 - April 2021",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+     "برنامه نویس ری اکت (senior) : پروژه های مخطلفی با استفاده از ری اکت انجام دادم",
+     "عملیات CRUD  رو در قالب rest انجام دادم ",
+     "این سایت جذاب رو هم با کمک کتابخونه Threejs و vite بالا آوردم",
+     "در استایل دهی از tailwind css استفاده شده"
+
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
+      
+      title: "آشنا با بک اند ",
+      company_name: "Nodejs",
       icon: tesla,
       iconBg: "#E6DEDD",
       date: "Jan 2021 - Feb 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+     "علاوه بر این که در حال توسعه فرانت هستم تا حدودی هم با بک اند کار کردم",
+     "یک سرور تجاری برای : ",
+     "Registration , Authentication , Authorizathion " ,
+     "CRUD for : Products , Categories  , Orders , Reviews , Brands , Colors,  ",
+     " تولید ProductId انحصاری برای هر محصول و ارتباط محصول با شخص سفارش دهنده و تعداد کل "
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
+      title: "دیتا بیس",
+      company_name: "Mongodb",
       icon: shopify,
       iconBg: "#383E56",
       date: "Jan 2022 - Jan 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+      "به عنوان پایگاه داده از mongoose استفاده کردم",
+      "mongoose از نوع پایگاه داده های non-relational هست و امکان ذخیره داده به صورت Object (شئ) رو فراهم میکنه",
+      "چون رو vs Code  نصب میشه برای تست و را اندازی پروژه دسترسی مناسبی داره"
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
+      title: "وردپرس",
+      company_name: "Wordpress",
       icon: meta,
       iconBg: "#E6DEDD",
       date: "Jan 2023 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+      "روی وردپرس تسلط دارم از صفر برای بالا اوردن انواع سایت فروشگاهی , شرکتی و مارکت پلیس و ...",
+      "تو یکی از پروژه های ری اکتیم از وردپرس به عنوان backend و database استفاده کردم",
+      "طوری که UI با React طراحی شده بود و برای عملیات CRUD از وردپرس اسافاده میشه"
+
       ],
     },
   ];
@@ -172,26 +182,26 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
+        "سایت جذابی هست من فکر میکنم برای صفحه لندینگ مناسب باشه .",
+      name: "سارا محمدی",
+      designation: " محمدی",
+      company: "پیشتازان تکنولوژی",
       image: "https://randomuser.me/api/portraits/women/4.jpg",
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
+        "سایت خوبی شده تبریک ! البته یکم جا برای بهتر شدن داره ولی در کل سایت خوبی هست.",
+      name: "رضا بوشهری",
+      designation: " بوشهری",
+      company: "موسسه تحقیقاتی",
       image: "https://randomuser.me/api/portraits/men/5.jpg",
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
+        "من سایت رو با گوشی بررسی کردم سایت خوبی هست همچنین این که سرعت لود خوبی هم داره !",
+      name: "مرضیه حق جو",
+      designation: "حقجو ",
+      company: "ارتباطات نوین",
       image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
   ];
@@ -219,30 +229,32 @@ import {
       source_code_link: "https://github.com/",
     },
     {
-      name: "Job IT",
+      name: "پرتفولیو",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        " یک صفحه لندینگ با انیمیشن های جذاب برای معرفی و نمایش پروژه های انجام شده و توانایی های ساخت صفحه لندینگ جذاب. و مناسب برای معرفی کار",
+        
+        
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "three.js",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "tailwindcss",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: myproj,
+      source_code_link: "https://github.com/Mehrdad-Mh/3D_Portfolio",
     },
     {
-      name: "Trip Guide",
+      name: "مدیریت مخاطبین",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "یک نرم افزار برای ساخت تغیر و حذف مخاطبین امکان اضافه کردن ادرس عکس نوع گروه و شماره تماس و ذخیره هر مخاطب در فایل json.",
       tags: [
         {
           name: "nextjs",
@@ -257,8 +269,8 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: myproj2,
+      source_code_link: "https://github.com/Mehrdad-Mh/contacts-manager",
     },
   ];
   
